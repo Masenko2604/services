@@ -1,128 +1,635 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/services/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/services/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/services/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Excellence</title>
+
+  <meta name="description"
+    content="English Excellence – a platform for learning English with individual courses, practice, and modern teaching methods." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+  <script type="module" crossorigin src="/services/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/services/assets/index-BERw_tw3.css">
+</head>
+
+<body>
+  
+<header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/services/assets/sprite-E8vg0sBb.svg#logo"></use>
+    <nav class="header-nav">
+      <div class="nav-logo">
+        <a href="/mcs9-incredibles">
+          english<span class="logo-span">excellence</span>.
+        </a>
+      </div>
+
+      <button type="button" class="burger-btn js-open-menu" aria-expanded="false" aria-controls="header__mobile">
+        <svg class="burger-icon" aria-label="toggles mobile menu" role="img">
+          <use class="icon--mobile" href="/services/assets/icons-B_SY1GJM.svg#icon-nav"></use>
+          <use class="icon--wide" href="/services/assets/icons-B_SY1GJM.svg#icon-nav_bold"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
+      </button>
+
+      <nav class="page-nav">
+        <ul class="header-nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#lessons" class="nav-link">Our lessons</a>
+          </li>
+          <li class="nav-item">
+            <a href="#teachers" class="nav-link">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#application-form" class="nav-link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <ul class="social-list">
+          <li class="header-nav-item">
+            <a class="social-link header-link" href="https://www.facebook.com/goITclub/" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-B_SY1GJM.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a class="social-link header-link" href="https://www.instagram.com/goitclub/" target="_blank"
+              rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-B_SY1GJM.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a class="social-link header-link" href="https://www.youtube.com/c/GoIT" target="_blank"
+              rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-B_SY1GJM.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
+    <!-- header modal -->
+    <div class="burger_modal js-menu-container" id="header__mobile" role="dialog" aria-modal="true">
+      <div class="burger_container">
+        <button type="button" class="close-btn js-close-menu" aria-label="close menu">
+          <svg class="modal-close" role="img" width="32" height="32">
+            <use class="icon--wide" href="/services/assets/icons-B_SY1GJM.svg#icon-close_bold"></use>
+          </svg>
+        </button>
+
+        <nav class="modal-nav">
+          <ul class="modal-nav-list">
+            <li class="modal-nav-item">
+              <a href="#about" class="nav-link mobile-menu-list">About us</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="#lessons" class="nav-link mobile-menu-list">Our lessons</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="#teachers" class="nav-link mobile-menu-list">Teachers</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="#reviews" class="nav-link mobile-menu-list">Reviews</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="#application-form" class="nav-link mobile-menu-list">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="modal_social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                  <use href="/services/assets/icons-B_SY1GJM.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.instagram.com/goitclub/" target="_blank"
+                rel="noopener noreferrer" aria-label="Instagram">
+                <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                  <use href="/services/assets/icons-B_SY1GJM.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer"
+                aria-label="YouTube">
+                <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                  <use href="/services/assets/icons-B_SY1GJM.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
+  
+  <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/services/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
+  <main>
+    <!-- Start hero section -->
+<section id="hero" class="hero-section">
+  <div class="container hero-content">
+    <h1 class="hero-text animated">
+      Discover the joy of learning
+      <span class="hero-english">English</span> with us!
+    </h1>
+    <a href="#application-form" class="button hero-button animated">Leave an application</a>
+    <div class="hero-checkmark">
+      <a href="#footer" class="hero-checkmark-container animated" aria-label="Footer button">
+        <svg class="hero-svg" aria-hidden="true">
+          <use class="hero-use" xlink:href="/services/assets/icons-B_SY1GJM.svg#icon-checkmark"></use>
+        </svg>
       </a>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
 </section>
-
-      <article class="badges">
+<!-- End hero section -->
+    <section id="about" class="section about">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <h2 class="section-title">About <span>Us</span></h2>
+    <p class="section-subtitle">
+      We are dedicated to providing engaging and effective English language
+      courses in a supportive and stimulating learning environment
+    </p>
+
+    <div class="about-wrapper">
+      <ol class="about-list">
+        <li class="about-item">
+          <p class="about-item-text">Expert, innovative teaching staff</p>
+        </li>
+        <li class="about-item">
+          <p class="about-item-text">Wide range of course levels and options</p>
+        </li>
+        <li class="about-item">
+          <p class="about-item-text">Multicultural learning environment</p>
+        </li>
+        <li class="about-item">
+          <p class="about-item-text">Comprehensive language support services</p>
+        </li>
+      </ol>
+
+      <div class="img_box">
+        <img class="about_img" srcset="img/memoji/memoji.png, img/memoji/memoji@2x.png 2x" src="img/memoji/memoji.png"
+          alt="Portrait of teacher" width="254" height="211" />
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Start our lessons section -->
+<section id="lessons" class="section lesson-section">
+  <div class="container">
+    <h2 class="section-title">Our <span>lessons</span></h2>
+    <p class="section-subtitle">
+      Our lessons are carefully structured and interactive, designed to promote
+      rapid language acquisition through practical tasks and real-world
+      scenarios
+    </p>
+    <ul class="lessons-list">
+      <li class="lesson-item">
+        <h3 class="lesson-item-title">Practice</h3>
+        <h4 class="lesson-item-price">40$ / month</h4>
+        <p class="lesson-item-text">
+          This plan offers an opportunity for learners to engage in
+          collaborative language exercises and group activities, boosting their
+          conversational skills and confidence in using English.
+        </p>
+        <a href="#application-form" class="button lesson-button">Leave an application</a>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="lesson-item active-item">
+        <h3 class="lesson-item-title">Standard</h3>
+        <h4 class="lesson-item-price">70$ / month</h4>
+        <p class="lesson-item-text">
+          Our standard package provides a balanced learning approach that covers
+          all key areas of English language - reading, writing, listening, and
+          speaking. It is a set of basic knowledge and skills.
+        </p>
+        <a href="#application-form" class="button outlined-button lesson-button">Leave an application</a>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="lesson-item">
+        <h3 class="lesson-item-title">Individual</h3>
+        <h4 class="lesson-item-price">99$ / month</h4>
+        <p class="lesson-item-text">
+          We offer a tailored learning experience with individualized
+          instruction that focuses on a learner's specific language goals and
+          challenges, offering personal feedback.
+        </p>
+        <a href="#application-form" class="button lesson-button">Leave an application</a>
       </li>
     </ul>
   </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
+</section>
+<!-- End our lessons section -->
+    <!-- Start our Proposal section -->
+<section id="proposal" class="section proposal-section">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
+    <div class="proposal-container">
+      <h2 class="visually-hidden">Proposal to leave an application</h2>
+      <p class="title">
+        Master the <span class="title-language">Language</span> with Our English
+        Package!
+      </p>
+      <div class="proposal-inner">
+        <div class="proposal-wrapper">
+          <p class="proposal-text">Power of English</p>
+          <ul class="proposal-list">
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-B_SY1GJM.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Dive into captivating lessons designed to stimulate your
+                curiosity.
+              </p>
+            </li>
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-B_SY1GJM.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Learn in a nurturing setting where every student's progress
+                matters.
+              </p>
+            </li>
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-B_SY1GJM.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Experience the satisfaction of real progress as your language
+                skills and confidence grow with every session.
+              </p>
+            </li>
+          </ul>
+          <a href="#application-form" class="button proposal-button">Leave an application</a>
+          <div class="books-image-wrapper">
+            <picture>
+              <source srcset="data:image/avif;base64, 1x, data:image/avif;base64, 2x" type="image/avif" />
+              <source srcset="/services/assets/books@1x-C5x3lTuK.png 1x, /services/assets/books@2x-CuxoVPSx.png 2x" />
+              <img src="/services/assets/books@1x-C5x3lTuK.png" alt="Tall stack of books" class="books-img animated" width="214"
+                height="263" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End our Proposal section -->
+    <section id="teachers" class="section teachers-section">
+  <div class="container">
+    <h2 class="section-title">Meet our <span>teachers</span></h2>
+    <p class="section-subtitle">
+      Discover our team of dedicated educators, committed to guiding you on your
+      journey to English proficiency with personalized and engaging instruction
     </p>
+    <ul class="teachers-card-list">
+      <li class="teachers-card">
+        <picture>
+          <source srcset="/img/teachers/teacher-1@1x.avif 1x, /img/teachers/teacher-1@2x.avif 2x" type="image/avif" />
+          <source srcset="/img/teachers/teacher-1@1x.png 1x, /img/teachers/teacher-1@2x.png 2x" />
+          <img src="/img/teachers/teacher-1@1x.png" alt="Teacher's avatar. Girl on the gray background."
+            class="teacher-img" width="150" height="150" />
+        </picture>
+        <div class="teachers-card-footer">
+          <h3 class="teachers-card-title">Maria</h3>
+          <p class="teachers-text">
+            A seasoned linguist and our primary specialist in beginner-level
+            instruction, Maria brings warmth and patience to every class
+          </p>
+        </div>
+      </li>
+      <li class="teachers-card">
+        <picture>
+          <source srcset="/img/teachers/teacher-2@1x.avif 1x, /img/teachers/teacher-2@2x.avif 2x" type="image/avif" />
+          <source srcset="/img/teachers/teacher-2@1x.png 1x, /img/teachers/teacher-2@2x.png 2x" />
+          <img src="/img/teachers/teacher-2@1x.png" alt="Teacher's avatar. Boy on the light-brown background."
+            class="teacher-img" width="150" height="150" />
+        </picture>
+        <div class="teachers-card-footer">
+          <h3 class="teachers-card-title">Artem</h3>
+          <p class="teachers-text">
+            With his innovative teaching techniques and a focus on interactive
+            learning, Artem excels in keeping students engaged and motivated
+          </p>
+        </div>
+      </li>
+      <li class="teachers-card">
+        <picture>
+          <source srcset="/img/teachers/teacher-3@1x.avif 1x, /img/teachers/teacher-3@2x.avif 2x" type="image/avif" />
+          <source srcset="/img/teachers/teacher-3@1x.png 1x, /img/teachers/teacher-3@2x.png 2x" />
+          <img src="/img/teachers/teacher-3@1x.png" alt="Teacher's avatar. Boy on the light-brown background."
+            class="teacher-img" width="150" height="150" />
+        </picture>
+        <div class="teachers-card-footer">
+          <h3 class="teachers-card-title">Ilona</h3>
+          <p class="teachers-text">
+            A specialist in advanced English, Ilona provides intensive
+            instruction, ensuring students gain confidence in complex language
+            tasks
+          </p>
+        </div>
+      </li>
+      <li class="teachers-card">
+        <picture>
+          <source srcset="/img/teachers/teacher-4@1x.avif 1x, /img/teachers/teacher-4@2x.avif 2x" type="image/avif" />
+          <source srcset="/img/teachers/teacher-4@1x.png 1x, /img/teachers/teacher-4@2x.png 2x" />
+          <img src="/img/teachers/teacher-4@1x.png" alt="Teacher's avatar. Boy on the light-brown background."
+            class="teacher-img" width="150" height="150" />
+        </picture>
+        <div class="teachers-card-footer">
+          <h3 class="teachers-card-title">Volodymyr</h3>
+          <p class="teachers-text">
+            Our expert in English for specific purposes, Volodymyr tailors his
+            approach to meet individual career and industry-specific language
+            needs
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section id="application-form" class="section">
+  <div class="container">
+    <h2 class="section-title">Leave an application</h2>
+    <div class="form-img-container">
+      <p class="leave-item-text-up">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <div class="leave-form__grid">
+        <div class="image">
+          <picture>
+            <source srcset="/img/leave_an_app/girl@1x.avif 1x, /img/leave_an_app/girl@2x.avif 2x" media="(min-width: 1280px)" type="image/avif" />
+
+            <source srcset="/services/assets/girl@1x-BKZzRjSS.png 1x, /services/assets/girl@2x-C4PbwNAj.png 2x" media="(min-width: 1280px)" type="image/png" />
+            <img src="/services/assets/girl@1x-BKZzRjSS.png" srcset="/services/assets/girl@2x-C4PbwNAj.png 2x"
+              alt="Student with headphones" />
+          </picture>
+          <p class="image-text-1000">1000</p>
+          <p class="image-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+        <form class="leave-form" action="#">
+          <div class="form-container">
+            <label class="visually-hidden" for="user-name">Name</label>
+            <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Name"
+              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}$" title="Мінімум 2 літери, тільки букви та пробіли" required />
+          </div>
+          <div class="form-container">
+            <label class="visually-hidden" for="phone">Phone</label>
+            <input class="form-input" type="tel" name="phone" id="phone" placeholder="Phone"
+              pattern="^\+38\s?\(0\d{2}\)\s?\d{3}-\d{2}-\d{2}$" title="Формат: +38 (0XX) XXX-XX-XX" required />
+          </div>
+          <div class="form-container">
+            <label class="visually-hidden" for="mail">Email</label>
+            <input class="form-input" type="email" name="mail" id="mail" placeholder="Email"
+              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" title="Введіть правильний email" required />
+          </div>
+          <div class="textarea-container">
+            <label class="visually-hidden" for="user-comment">Comment</label>
+            <textarea name="user-comment" class="form-textarea" id="user-comment" rows="10"
+              placeholder="Comment"></textarea>
+          </div>
+          <p class="radio-text">Choose a teacher</p>
+          <div role="group" class="radio">
+            <label for="maria"><input type="radio" name="teacher" value="maria" id="maria" />Maria</label>
+            <label for="artem"><input type="radio" name="teacher" value="artem" id="artem" />Artem</label>
+            <label for="ilona"><input type="radio" name="teacher" value="ilona" id="ilona" />Ilona</label>
+            <label for="volodymyr"><input type="radio" name="teacher" value="volodymyr"
+                id="volodymyr" />Volodymyr</label>
+          </div>
+          <button type="submit" class="button lesson-button">Send</button>
+          <p class="leave-item-text-down">
+            By clicking on “Send” button, you agree to our
+            <a class="text-link leave-item-link-text-down" href="/privacy-policy" target="_blank">Privacy
+              Policy,</a><br>and allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section section-reviews animated" id="reviews">
+  <div class="container">
+    <h2 class="section-title">What our <span>students</span> say</h2>
+    <p class="section-subtitle">
+      Hear from our students about their learning journey with us, as they share
+      their experiences, progress, and the transformative impact
+    </p>
+
+    <div class="reviews-slider" aria-roledescription="carousel">
+      <button class="nav-btn prev" aria-label="Previous review" type="button">
+        <svg class="nav-btn-icon prev-icon" width="24" height="24" aria-hidden="true">
+          <use href="/services/assets/icons-B_SY1GJM.svg#icon-checkmark"></use>
+        </svg>
+      </button>
+
+      <div class="viewport" tabindex="0" aria-live="polite">
+        <ul class="review-track">
+          <li class="review-item">
+            <div class="info-box">
+              <div class="review-img-box">
+                <img class="review-img" srcset="img/students/img-5@1x.jpg, img/students/img-5@2x.jpg 2x" src="img/students/img-5@1x.jpg" alt="Anna, student" width="50" height="50" />
+              </div>
+              <div class="review-info">
+                <h3 class="info-title">Anna</h3>
+                <h4 class="info-subtitle">Student</h4>
+              </div>
+            </div>
+            <p class="review-text">
+              My experience at the language school has been nothing short of
+              amazing. The teachers are dedicated and the learning environment
+              is stimulating. I feel more confident in my English skills.
+            </p>
+          </li>
+
+          <li class="review-item">
+            <div class="info-box">
+              <div class="review-img-box">
+                <img class="review-img" srcset="img/students/img-6@1x.jpg, img/students/img-6@2x.jpg 2x" src="img/students/img-6@1x.jpg" alt="Mykhailo, student" width="50" height="50" />
+              </div>
+              <div class="review-info">
+                <h3 class="info-title">Mykhailo</h3>
+                <h4 class="info-subtitle">Student</h4>
+              </div>
+            </div>
+            <p class="review-text">
+              The school offers a great balance of language theory and practical
+              exercises. The personalized feedback from the teachers has helped
+              me improve my weak areas.
+            </p>
+          </li>
+
+          <li class="review-item">
+            <div class="info-box">
+              <div class="review-img-box">
+                <img class="review-img" srcset="img/students/img-7@1x.jpg, img/students/img-7@2x.jpg 2x" src="img/students/img-7@1x.jpg" alt="Victoria, student" width="50" height="50" />
+              </div>
+
+              <div class="review-info">
+                <h3 class="info-title">Victoria</h3>
+                <h4 class="info-subtitle">Student</h4>
+              </div>
+            </div>
+            <p class="review-text">
+              I love the dynamic and interactive teaching methods used here.
+              It's a great place to learn English in a fun and effective way. I
+              have definitely seen a big improvement in my language skills.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-btn next" aria-label="Next review" type="button">
+        <svg class="nav-btn-icon next-btn" width="24" height="24" aria-hidden="true">
+          <use href="/services/assets/icons-B_SY1GJM.svg#icon-checkmark"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-container">
+      <div class="logo-contacts-container">
+        <!-- Логотип -->
+        <div class="footer-logo">
+          <a class="footer-logo-link" href="/mcs9-incredibles">
+            english<span class="logo-span">excellence</span>.
+          </a>
+        </div>
+
+        <!-- Контакти -->
+        <ul class="footer-contacts">
+          <li>
+            <p class="footer-contacts-label">Phone number:</p>
+            <a class="footer-phone" href="tel:+380684439426">+380 (68) 443-94-26</a>
+          </li>
+          <li>
+            <p class="footer-contacts-label">Address:</p>
+            <address>
+              <a class="footer-phone" href="https://maps.google.com/?q=32a+M.+Bazhana+ave" target="_blank"
+                rel="noopener noreferrer">
+                32a M. Bazhana ave
+              </a>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Навігація -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <a class="footer-address" href="#about">About us</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-address" href="#lessons">Our lessons</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-address" href="#teachers">Teachers</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-address" href="#reviews">Reviews</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-address" href="#application-form">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Соціальні мережі -->
+      <div class="modal_social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="social-link" href="https://www.facebook.com/goITclub/" aria-label="Facebook" target="blank">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-B_SY1GJM.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="social-link" href="https://www.instagram.com/goitclub/" aria-label="Instagram" target="blank">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-B_SY1GJM.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="social-link" href="https://www.youtube.com/c/GoIT" aria-label="YouTube" target="blank">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-B_SY1GJM.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Лінія -->
+    <hr class="footer-divider" />
+
+    <!-- Нижня смуга -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        ©2023 English Excellence. All rights reserved.
+      </p>
+      <ul class="footer-legal">
+        <li class="footer-legal-item">
+          <a class="footer-legal-link" href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy
+            Policy</a>
+        </li>
+        <li class="footer-legal-item">
+          <a class="footer-legal-link" href="/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
 
 
-  </body>
+  <div class="js-menu-overlay"></div>
+
+</body>
+
 </html>
