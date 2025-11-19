@@ -1,23 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Excellence</title>
 
-    <load src="./partials/footer.html" />
+  <meta name="description"
+    content="English Excellence – a platform for learning English with individual courses, practice, and modern teaching methods." />
 
-    <script type="module" src="./main.js"></script>
-  </body>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+</head>
+
+<body>
+  <load src="partials/header.html" />
+  <load src="partials/mobile-menu.html" />
+  <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <main>
+    <load src="partials/hero.html" />
+    <load src="partials/about_us.html" />
+    <load src="partials/our_lessons.html" />
+    <load src="partials/proposal.html" />
+    <load src="partials/our_teachers.html" />
+    <load src="partials/leave_app_form.html" />
+    <load src="partials/reviews.html" />
+  </main>
+
+  <load src="./partials/footer.html" />
+
+  <div class="js-menu-overlay"></div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
