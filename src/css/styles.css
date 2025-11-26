@@ -1,4 +1,3 @@
-
 /**
   |============================
   | include css partials with
@@ -17,6 +16,6 @@
 @import url('./our_lessons.css');
 @import url('./about_us.css');
 @import url('./proposal.css');
-@import url('./our_teachers.css');
+/* @import url('./our_teachers.css'); */
 @import url('./reviews.css');
 @import url('./leave_app_form.css');
