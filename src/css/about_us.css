@@ -70,7 +70,7 @@
   letter-spacing: -0.02em;
 }
 
-.img_box {
+/* .img_box {
   width: 100%;
   padding: 68px 0 72px 0;
   border-radius: 16px;
@@ -86,4 +86,4 @@
   @media screen and (min-width: 1280px) {
     padding: 88px 0 92px 0;
   }
-}
+} */
