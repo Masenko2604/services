@@ -35,6 +35,14 @@
     gap: 32px;
   }
 }
+.topic-title {
+  font-size: 26;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: -0.2em;
+  color: var(--green);
+}  
 
 .about-item {
   width: 100%;
