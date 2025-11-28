@@ -36,12 +36,13 @@
   }
 }
 .topic-title {
-  font-size: 26;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 12px;
-  letter-spacing: -0.2em;
+  font-size: 16px;
+    font-weight: 1200;
+    line-height: 1.2;
+    letter-spacing: -0.02em;  
   color: var(--green);
+  margin-bottom: 12px;
+
 }  
 
 .about-item {
@@ -58,7 +59,7 @@
   }
 }
 
-/* .about-item::before {
+.about-item::before {
   content: counter(aboutCount, decimal-leading-zero);
   position: absolute;
   left: 32px;
@@ -68,7 +69,7 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -0.02em;
-} */
+} 
 
 .about-item-text {
   color: var(--black);
