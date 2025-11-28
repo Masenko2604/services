@@ -50,7 +50,7 @@
   }
 }
 
-.about-item::before {
+/* .about-item::before {
   content: counter(aboutCount, decimal-leading-zero);
   position: absolute;
   left: 32px;
@@ -60,10 +60,10 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -0.02em;
-}
+} */
 
 .about-item-text {
-  color: var(--black);
+  color: var(--green);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
