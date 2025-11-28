@@ -27,8 +27,8 @@
 
 .about-list {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;    /* центрируем по горизонтали */
+    flex: direction;
+      justify-content: center;    /* центрируем по горизонтали */
     gap: 32px;    /* расстояние между карточками */
     width: 100%;
   /* width: 100%;
@@ -48,7 +48,7 @@
   }
 }
 .topic-title {
-  font-size: 20px;
+  font-size: px;
     font-weight: 1200;
     line-height: 1.2;
     letter-spacing: -0.02em;  
