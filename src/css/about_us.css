@@ -21,10 +21,8 @@
 .about-list {
   display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* центрируем по горизонтали */
-    gap: 32px;
-    /* расстояние между карточками */
+    justify-content: center;    /* центрируем по горизонтали */
+    gap: 32px;    /* расстояние между карточками */
     width: 100%;
   /* width: 100%;
   display: flex;
