@@ -1,7 +1,9 @@
 .about-wrapper {
-width: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 
   @media screen and (min-width: 768px) {
     gap: 32px;
@@ -11,48 +13,88 @@ width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 32px;
-    align-items: start;
+    align-items: stretch;
+    max-width: 1024px;
   }
 }
 
-/* Список элементов */
 .about-list {
   width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* центрирование элементов */
-    gap: 32px;
-    margin: 0 auto;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  counter-reset: aboutCount;
+  margin: 0;
+  padding: 0;
 
   @media screen and (min-width: 768px) {
-    gap: 24px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    flex-direction: column;
-    /* на десктопе тоже столбик */
-    align-items: stretch;
-    /* каждая карточка тянется на всю ширину */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 }
 
-/* Элемент списка */
 .about-item {
-width: 100%;
-  max-width: 500px;
-  padding: 32px;
+  width: 100%;
+  padding: 32px 32px 32px 32px;
   border-radius: 16px;
   background: var(--gray);
 
+  counter-increment: aboutCount;
+  position: relative;
+
   @media screen and (min-width: 768px) {
-    flex: 0 1 calc(50% - 32px);
+    flex-basis: calc((100% - 32px) / 2);
   }
 }
 
+/* .about-item::before {
+  content: counter(aboutCount, decimal-leading-zero);
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  color: var(--green);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+} */
+.topic-title {
+  font-size: 24px;
+  font-weight: 1200;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--green);
+  margin-bottom: 12px;
+
+}
+.about-item-text {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.img_box {
+  width: 100%;
+  padding: 68px 0 72px 0;
+  border-radius: 16px;
+  background: #4dc274;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 34px 0 36px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 88px 0 92px 0;
+  }
+}
 
 
 /* .about-wrapper {
