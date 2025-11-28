@@ -79,20 +79,3 @@
   letter-spacing: -0.02em;
 }
 
-/* .img_box {
-  width: 100%;
-  padding: 68px 0 72px 0;
-  border-radius: 16px;
-  background: #4dc274;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (min-width: 768px) {
-    padding: 34px 0 36px 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 88px 0 92px 0;
-  }
-} */
