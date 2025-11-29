@@ -3,7 +3,7 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
-
+import htmlInclude from 'vite-plugin-html-include'; 
 export default defineConfig(({ command }) => {
   return {
     base: '/mcs9-incredibles/',
@@ -40,6 +40,7 @@ export default defineConfig(({ command }) => {
     },
     plugins: [
       injectHTML(),
+      htmlInclude(),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
