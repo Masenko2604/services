@@ -6,7 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 import htmlInclude from 'vite-plugin-html-include'; 
 export default defineConfig(({ command }) => {
   return {
-    base: '/mcs9-incredibles/',
+    base: '/services/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
