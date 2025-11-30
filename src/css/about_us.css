@@ -28,6 +28,12 @@
   counter-reset: aboutCount;
   margin: 0;
   padding: 0;
+  .about-list {
+   justify-content: flex-start;
+}
+.about-list {
+  justify-content: flex-start;
+}
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
