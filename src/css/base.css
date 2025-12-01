@@ -106,7 +106,6 @@ a {
   max-width: 665px;
   text-align: center;
 }
-
 .button {
   display: inline-flex;
   width: 100%;
@@ -114,26 +113,46 @@ a {
   padding: 14px 16px;
   justify-content: center;
   align-items: center;
-  background-color: var(--green-dark);
-  border: 0;
+  border: 2px solid var(--green);
   border-radius: 12px;
-  border-color: rgba(129, 167, 109, 1);
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.71;
+  transition: background-color var(--common-transition), border-color var(--common-transition);
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(129, 167, 109, 1);
+  border-color: rgb(98, 129, 82);
+}
+/* .button {
+  display: inline-flex;
+  width: 100%;
+  height: 52px;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center; 
+  border: 0;
+  border-radius: 12px; 
   outline: none;
   font-size: 14px;
   font-weight: 700;
   color: var(--white);
   line-height: 1.71;
   transition: background-color var(--common-transition);
-}
+} */
 
-.button:hover,
+/* .button:hover,
 .button:focus {
   background-color: rgba(129, 167, 109, 1);
-}
+} */
 
 .button.outlined-button {
   background-color: transparent;
   border: 1px solid var(--white-button-text);
+  
 }
 
 .button.outlined-button:hover,

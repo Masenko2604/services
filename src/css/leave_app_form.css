@@ -48,13 +48,22 @@
     height: 56px;
   }
 }
+.button  {
+  color: var(--green);
+}
+.button:hover,
+.button:focus {
+  background-color: rgba(129, 167, 109, 1);
+  border-color: rgb(98, 129, 82);
+  color:var(--white)
+}
 
 .form-input:focus+.input-container {
-  color: var(--green-dark);
+  color: var(--green);
 }
 
 .form-input:focus {
-  border: 1px solid var(--green-dark);
+  border: 1px solid var(--green);
 }
 
 /* textarea */
@@ -173,15 +182,19 @@ textarea {
   .leave-item-text-up {
     padding-left: 157.5px;
     padding-right: 157.5px;
+    
   }
 
   .leave-item-text-down {
     font-size: 14px;
     line-height: 1.71;
+   
+    
   }
 
   .leave-item-link-text-down {
     line-height: 1.71;
+   
   }
 }
 
@@ -267,6 +280,7 @@ input[type='radio']:checked::after {
   background-color: var(--green-dark);
   border-radius: 50%;
   transform: translate(-50%, -50%);
+ 
 }
 
 .image {
