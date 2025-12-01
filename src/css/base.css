@@ -54,14 +54,14 @@ a {
 }
 
 .title-primary {
-  color: var(--green-dark);
+  color:rgba(129, 167, 109, 1);
   font-size: 38px;
   font-weight: 700;
   line-height: 1.05;
 }
 
 .title-primary span {
-  color: var(--orange);
+  color: rgba(129, 167, 109, 1);
 }
 
 .section-title {
@@ -117,7 +117,7 @@ a {
   background-color: var(--green-dark);
   border: 0;
   border-radius: 12px;
-  border-color: #e2633d;
+  border-color: rgba(129, 167, 109, 1);
   outline: none;
   font-size: 14px;
   font-weight: 700;
@@ -128,7 +128,7 @@ a {
 
 .button:hover,
 .button:focus {
-  background-color: var(--hover-green-dark);
+  background-color: rgba(129, 167, 109, 1);
 }
 
 .button.outlined-button {
