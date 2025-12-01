@@ -54,10 +54,10 @@
 
 .topic-title {
   font-size: 24px;
-  font-weight: 1200;
+  /* font-weight: 1200; */
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: rgb(129, 167, 109);
+  color: #81a76d;
   margin-bottom: 12px;
 
 }
