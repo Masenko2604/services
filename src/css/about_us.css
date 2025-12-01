@@ -57,7 +57,7 @@
   /* font-weight: 1200; */
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: #81a76d;
+  color: var(--green);
   margin-bottom: 12px;
 
 }
