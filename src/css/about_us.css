@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 
   @media screen and (min-width: 768px) {
@@ -41,7 +42,7 @@
   border-radius: 12px;
     border-radius: 16px;
     padding: 20px;
-    background: var(--gray-dark);
+    background:rgb(238, 237, 237);
     position: relative;
   
 
@@ -56,12 +57,12 @@
   font-weight: 1200;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: var(--green-dark);
+  color: rgb(129, 167, 109);
   margin-bottom: 12px;
 
 }
 .about-item-text {
-  color: var(--black);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;

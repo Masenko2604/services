@@ -28,7 +28,7 @@
 
 .review-item {
   border-radius: 30px;
-  background: var(--gray);
+  background: rgb(238, 237, 237);
   padding: 20px 20px 40px 20px;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
 
 .info-box {
   border-radius: 15px;
-  background: var(--green);
+  background: rgb(129, 167, 109);
   padding: 14px;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #81a76d;
+  background: rgb(129, 167, 109);
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -76,7 +76,7 @@
 }
 
 .info-title {
-  color: var(--white);
+  color: rgb(238, 237, 237);
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -84,7 +84,7 @@
 }
 
 .info-subtitle {
-  color: var(--white-container);
+  color: rgb(238, 237, 237);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;

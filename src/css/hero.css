@@ -46,7 +46,7 @@
 }
 
 .hero-english {
-  color: var(--lighter-green-dark);
+  color: rgba(129, 167, 109, 1);
 }
 
 .hero-button {
@@ -55,9 +55,10 @@
   margin-top: 40px;
   max-width: 295px;
   width: 100%;
-  border-color: #e2633d;
+  border-color: rgba(129, 167, 109, 1);
  
 }
+
 
 .hero-svg {
   width: 20px;
