@@ -46,7 +46,7 @@
 }
 
 .hero-english {
-  color: var(--lighter-green);
+  color: var(--lighter-green-dark);
 }
 
 .hero-button {
@@ -63,7 +63,7 @@
 }
 
 .hero-use {
-  fill: var(--green);
+  fill: var(---darkgreen);
 }
 
 .hero-checkmark {
@@ -87,7 +87,7 @@
 
 .hero-checkmark-container:hover,
 .hero-checkmark-container:focus {
-  background-color: var(--green);
+  background-color: var(--green-dark);
 }
 
 .hero-checkmark-container:hover .hero-use,

@@ -197,7 +197,7 @@ address {
 .footer-social-item:hover,
 .footer-social-item:focus {
   border: 1px solid transparent;
-  background: var(--gradient-green);
+  background: var(--gradient-green-dark);
 }
 
 .social-icon-footer {
@@ -211,7 +211,7 @@ address {
 .social-icon-footer:hover,
 .social-icon-footer:focus {
   border: 1px solid transparent;
-  background: var(--gradient-green);
+  background: var(--gradient-green-dark);
 }
 
 .footer-divider {
