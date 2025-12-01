@@ -14,7 +14,7 @@
 }
 
 .title-language {
-  color: var(--lighter-green);
+  color: rgb(129, 167, 109, 1);
 }
 
 .proposal-wrapper {
@@ -44,7 +44,7 @@
 }
 
 .proposal-inner::before {
-  background-color: var(--light-green);
+  background-color: var(--orange);
   transform: rotate(-9deg);
 }
 

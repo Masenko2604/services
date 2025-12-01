@@ -16,7 +16,7 @@
 }
 
 .logo-span {
-  color: var(--green-dark);
+  color: rgba(129, 167, 109, 1);
 }
 
 .burger-btn {
@@ -192,7 +192,7 @@
   width: 110%;
   height: 4px;
   border-radius: 4px;
-  background: var(--hover-green-dark);
+  background: rgba(129, 167, 109, 1);
   transition: transform 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 

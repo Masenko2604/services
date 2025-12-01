@@ -57,7 +57,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #4dc274;
+  background: #81a76d;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -91,10 +91,11 @@
 }
 
 .review-text {
-  color: var(--form-agreement-text);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
 }
 
 .nav-btn {

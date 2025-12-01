@@ -41,7 +41,7 @@
   border-radius: 12px;
     border-radius: 16px;
     padding: 20px;
-    background: var(--gray);
+    background: var(--gray-dark);
     position: relative;
   
 
@@ -72,7 +72,7 @@
   width: 100%;
   padding: 68px 0 72px 0;
   border-radius: 16px;  
-  background: #4dc274;
+  background: #81a76d;
   display: flex;
   align-items: center;
   justify-content: center;

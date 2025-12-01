@@ -55,6 +55,8 @@
   margin-top: 40px;
   max-width: 295px;
   width: 100%;
+  border-color: #e2633d;
+ 
 }
 
 .hero-svg {
@@ -195,6 +197,7 @@
   .hero-button {
     margin-top: 32px;
     max-width: 306px;
+    
   }
 
   .hero-text {
