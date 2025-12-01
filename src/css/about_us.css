@@ -53,8 +53,7 @@
 
 
 .topic-title {
-  font-size: 24px;
-  /* font-weight: 1200; */
+  font-size: 24px;  
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(129, 167, 109, 1);
@@ -74,7 +73,7 @@
   width: 100%;
   padding: 68px 0 72px 0;
   border-radius: 16px;  
-  background: #81a76d;
+  background: rgba(129, 167, 109, 1);
   display: flex;
   align-items: center;
   justify-content: center;
