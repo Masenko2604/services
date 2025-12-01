@@ -57,8 +57,9 @@
   /* font-weight: 1200; */
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: var(--green);
+  color: rgba(129, 167, 109, 1);
   margin-bottom: 12px;
+
 
 }
 .about-item-text {

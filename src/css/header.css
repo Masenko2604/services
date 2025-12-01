@@ -13,6 +13,7 @@
   color: var(--black);
   font-size: 28px;
   font-weight: 800;
+  text-shadow: 0 .4px .4px #fff;
 }
 
 .logo-span {
