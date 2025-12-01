@@ -113,7 +113,7 @@ a {
   padding: 14px 16px;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--green);
+  border: 2px solid rgba(129, 167, 109, 1);
   border-radius: 12px;
   outline: none;
   font-size: 14px;

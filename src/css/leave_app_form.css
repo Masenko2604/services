@@ -49,7 +49,7 @@
   }
 }
 .button  {
-  color: var(--green);
+  color:rgba(129, 167, 109, 1);
 }
 .button:hover,
 .button:focus {
@@ -59,11 +59,11 @@
 }
 
 .form-input:focus+.input-container {
-  color: var(--green);
+  color: rgba(129, 167, 109, 1);
 }
 
 .form-input:focus {
-  border: 1px solid var(--green);
+  border: 1px solid rgba(129, 167, 109, 1);
 }
 
 /* textarea */
@@ -100,11 +100,11 @@ textarea {
 }
 
 .form-textarea:focus {
-  border: 1px solid var(--green-dark);
+  border: 1px solid rgba(129, 167, 109, 1);
 }
 
 .textarea-container textarea::placeholder {
-  color: #121417;
+  color:rgba(18, 20, 23, 0.8);
 }
 
 @media screen and (min-width: 768px) {
@@ -120,7 +120,7 @@ textarea {
 }
 
 .text-link:hover {
-  color: var(--green-dark);
+  color: rgba(129, 167, 109, 1);
   text-decoration: underline;
 }
 
@@ -199,7 +199,7 @@ textarea {
 }
 
 .form-input::placeholder {
-  color: var(--black);
+  color: rgb(4, 4, 4);
 }
 
 .radio {
@@ -226,7 +226,7 @@ textarea {
     font-size: 20px;
     line-height: 1.33;
     letter-spacing: -0.02em;
-    color: var(--black);
+    color: rgb(4, 4, 4);
     margin-bottom: 14px;
   }
 }
@@ -241,7 +241,7 @@ textarea {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.02em;
-  color: var(--black);
+  color: rgb(4, 4, 4);
 }
 
 @media screen and (min-width: 768px) {
@@ -267,7 +267,7 @@ input[type='radio'] {
 }
 
 input[type='radio']:checked {
-  border-color: var(--green-dark);
+  border-color: rgba(129, 167, 109, 1);
 }
 
 input[type='radio']:checked::after {
@@ -277,7 +277,7 @@ input[type='radio']:checked::after {
   left: 50%;
   width: 10px;
   height: 10px;
-  background-color: var(--green-dark);
+  background-color: rgba(129, 167, 109, 1);
   border-radius: 50%;
   transform: translate(-50%, -50%);
  
@@ -286,7 +286,7 @@ input[type='radio']:checked::after {
 .image {
   width: 492px;
   height: 578px;
-  background-color: var(--green-dark);
+  background-color: rgba(129, 167, 109, 1);
   border-radius: 30px;
   overflow: hidden;
   position: relative;
