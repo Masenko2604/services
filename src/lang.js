@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    heroTitle: "About Us",
+    heroTitle: "Services",
     heroSubtitle: "Company formation, accounting...",
     contactUs: "Contact Us",
     footerText: "All rights reserved.",
