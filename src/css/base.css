@@ -11,7 +11,7 @@
   --white-border: rgba(255, 255, 255, 0.1);
   --white-button-text: rgba(255, 255, 255, 0.4);
   --white-container: rgba(255, 255, 255, 0.5);
-  --hover-green-dark: rgb(129, 167, 109);
+  --hover-green: rgb(129, 167, 109);
   --form-border: rgba(18, 20, 23, 0.1);
   --form-agreement-text: rgba(18, 20, 23, 0.5);
   --form-app-text: rgba(255, 255, 255, 0.7);
@@ -118,28 +118,32 @@ a {
   outline: none;
   font-size: 14px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(231, 100, 7);
+  /* всегда оранжевый */
   line-height: 1.71;
   transition: background-color var(--common-transition), border-color var(--common-transition);
 }
+
 .button:hover,
 .button:focus {
   background-color: rgba(129, 167, 109, 1);
   border-color: rgb(98, 129, 82);
+  color: rgb(231, 100, 7);
+  /* ← фикс цвета */
 }
-
-
 .button.outlined-button {
   background-color: transparent;
   border: 1px solid var(--white-button-text);
-  
+  color: rgb(231, 100, 7);
+  /* фикс цвета */
 }
 
 .button.outlined-button:hover,
 .button.outlined-button:focus {
-  color: var(--green-dark);
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
+  color: rgb(231, 100, 7);
+  /* ← оставляем ОРАНЖЕВЫЙ */
 }
 
 .visually-hidden {

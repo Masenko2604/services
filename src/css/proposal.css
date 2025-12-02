@@ -168,8 +168,9 @@
   }
 
   .button.proposal-button {
-    width: 306px;
-    color: rgba(129, 167, 109, 1);
+    width: 306px;    
+    color: rgb(231, 100, 7);
+     
   }
 
   .books-image-wrapper {

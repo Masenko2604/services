@@ -57,6 +57,9 @@
   border-color: rgb(98, 129, 82);
   color:var(--white)
 }
+.button.lesson-button {
+  color: rgb(231, 100, 7);
+}
 
 .form-input:focus+.input-container {
   color: rgba(129, 167, 109, 1);

@@ -13,17 +13,18 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
+  color: rgb(129, 167, 109);
   
 }
 .logo-green-span {
   
-  color: rgb(54, 93, 33);
-  /* text-shadow: 0px 1px 4px rgb(231, 100, 7); */
+  color: rgb(129, 167, 109);
+
   
 }
 .logo-span {
   color: rgb(231, 100, 7);
-    /* text-shadow: 0px 1px 4px rgb(63, 108, 38); */
+    
 }
 
 .burger-btn {
