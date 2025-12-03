@@ -19,7 +19,7 @@
     linear-gradient(95.97deg,
       rgba(0, 0, 0, 0.4) 36.36%,
       rgba(0, 0, 0, 0) 51.43%),
-    url(/img/hero/block_mob@1x.jpg);
+    url(../img/hero/block_mob@1x.jpg);
 }
 
 /* webkit image-set fallback for mobile (1x/2x) */
@@ -28,7 +28,7 @@
     linear-gradient(95.97deg,
       rgba(0, 0, 0, 0.4) 36.36%,
       rgba(0, 0, 0, 0) 51.43%),
-    -webkit-image-set(url(/img/hero/block_mob@1x.jpg) 1x,
+    -webkit-image-set(url(../img/hero/block_mob@1x.jpg) 1x,
       url(/img/hero/block_mob@2x.jpg) 2x);
 }
 
@@ -40,7 +40,7 @@
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
-      url(/img/hero/block_mob@2x.jpg);
+      url(../img/hero/block_mob@2x.jpg);
   }
 }
 
@@ -120,7 +120,7 @@
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
-      url(/img/hero/block_tab@1x.jpg);
+      url(../img/hero/block_tab@1x.jpg);
   }
 
   .hero-section {
@@ -128,7 +128,7 @@
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
-      -webkit-image-set(url(/img/hero/block_tab@1x.jpg) 1x,
+      -webkit-image-set(url(../img/hero/block_tab@1x.jpg) 1x,
         url(/img/hero/block_tab@2x.jpg) 2x);
   }
 
@@ -140,7 +140,7 @@
         linear-gradient(95.97deg,
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%),
-        url(/img/hero/block_tab@2x.jpg);
+        url(../img/hero/block_tab@2x.jpg);
     }
   }
 
@@ -180,7 +180,7 @@
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
-      url(/img/hero/block_desk@1x.jpg);
+      url(../img/hero/block_desk@1x.jpg);
   }
 
   .hero-section {
@@ -188,8 +188,8 @@
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
-      -webkit-image-set(url(/img/hero/block_desk@1x.jpg) 1x,
-        url(/img/hero/block_desk@2x.jpg) 2x);
+      -webkit-image-set(url(../img/hero/block_desk@1x.jpg) 1x,
+        url(../img/hero/block_desk@2x.jpg) 2x);
   }
 }
 
@@ -201,7 +201,7 @@
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%),
-      url(/img/hero/block_desk@2x.jpg);
+      url(../img/hero/block_desk@2x.jpg);
   }
 }
 .hero-section {
