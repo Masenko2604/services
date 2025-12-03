@@ -1,3 +1,4 @@
+/* --- Base / Mobile --- */
 .hero-content {
   padding: 425px 14px 14px 20px;
   align-items: start;
@@ -7,9 +8,13 @@
   border-radius: 16px;
   margin: 8px auto 80px;
   max-width: 335px;
+
+  /* common background properties */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /* default (mobile 1x) */
   background-image:
     linear-gradient(95.97deg,
       rgba(0, 0, 0, 0.4) 36.36%,
@@ -17,6 +22,7 @@
     url(/img/hero/block_mob@1x.jpg);
 }
 
+/* webkit image-set fallback for mobile (1x/2x) */
 .hero-section {
   background-image:
     linear-gradient(95.97deg,
@@ -26,6 +32,7 @@
       url(/img/hero/block_mob@2x.jpg) 2x);
 }
 
+/* retina fallback for mobile (non-webkit) */
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   .hero-section {
@@ -37,6 +44,7 @@
   }
 }
 
+/* --- Text / Buttons / Small components (unchanged but fixed var) --- */
 .hero-text {
   font-family: inherit;
   font-size: 38px;
@@ -56,20 +64,20 @@
   max-width: 295px;
   width: 100%;
   border-color: rgba(129, 167, 109, 1);
- 
 }
+
 .button.hero-button {
   color: rgb(231, 100, 7);
 }
-
 
 .hero-svg {
   width: 20px;
   height: 20px;
 }
 
+/* исправлено --- долгое тире было тройным */
 .hero-use {
-  fill: var(---darkgreen);
+  fill: var(--darkgreen);
 }
 
 .hero-checkmark {
@@ -101,12 +109,13 @@
   fill: var(--white);
 }
 
-/* Tablet */
+/* ----------------- Tablet ----------------- */
 @media (min-width: 768px) and (max-width: 1279px) {
   .hero-section {
     border-radius: 30px;
     margin: 32px auto 100px;
     max-width: 704px;
+
     background-image:
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
@@ -123,7 +132,7 @@
         url(/img/hero/block_tab@2x.jpg) 2x);
   }
 
-  /* Retina для планшетів */
+  /* Retina for tablet (non-nested) */
   @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
     .hero-section {
@@ -160,12 +169,13 @@
   }
 }
 
-/* Desktop */
+/* ----------------- Desktop ----------------- */
 @media (min-width: 1280px) {
   .hero-section {
     border-radius: 30px;
     margin: 16px auto 96px;
     max-width: 1152px;
+
     background-image:
       linear-gradient(95.97deg,
         rgba(0, 0, 0, 0.4) 36.36%,
@@ -173,7 +183,6 @@
       url(/img/hero/block_desk@1x.jpg);
   }
 
-  /* WebKit для десктопу */
   .hero-section {
     background-image:
       linear-gradient(95.97deg,
@@ -182,17 +191,19 @@
       -webkit-image-set(url(/img/hero/block_desk@1x.jpg) 1x,
         url(/img/hero/block_desk@2x.jpg) 2x);
   }
+}
 
-  @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-    .hero-section {
-      background-image:
-        linear-gradient(95.97deg,
-          rgba(0, 0, 0, 0.4) 36.36%,
-          rgba(0, 0, 0, 0) 51.43%),
-        url(/img/hero/block_desk@2x.jpg);
-    }
+/* Desktop retina (separate top-level media query, not nested) */
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 1280px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image:
+      linear-gradient(95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%),
+      url(/img/hero/block_desk@2x.jpg);
   }
+}
 
   .hero-content {
     padding: 164px 32px 32px 64px;
@@ -218,4 +229,3 @@
     width: 48px;
     height: 48px;
   }
-}
