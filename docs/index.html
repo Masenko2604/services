@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <link rel="icon" type="image/png" href="/services/favicon.png" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Services</title>
+
+  <meta name="description"
+    content="Comprehensive Business and Personal Services in the Czech Republic
+Company formation, accounting, certified translations, bank account opening, licensing, legal support, and full administrative assistance." >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" >
+  <script type="module" crossorigin src="/services/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/services/assets/index-ysJvCD_v.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <nav class="header-nav">
+      <div class="nav-logo">
+        <a href="/mcs9-incredibles">
+          <span class="logo-green-span">GreenFrog</span><span class="logo-span">Office</span>
+        </a>
+
+        
+      </div>
+
+      <button type="button" class="burger-btn js-open-menu" aria-expanded="false" aria-controls="header__mobile">
+        <svg class="burger-icon" aria-label="toggles mobile menu" role="img">
+          <use class="icon--mobile" href="/services/assets/icons-C7iuSI4g.svg#icon-nav"></use>
+          <use class="icon--wide" href="/services/assets/icons-C7iuSI4g.svg#icon-nav_bold"></use>
+        </svg>
+      </button>
+
+      <nav class="page-nav">
+        <ul class="header-nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#lessons" class="nav-link">Our lessons</a>
+          </li>
+          <li class="nav-item">
+            <a href="#teachers" class="nav-link">Teachers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">Reviews</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="#application-form" class="nav-link">Contact us</a>
+          </li>
+        </ul>
+
+        <button onclick="applyTranslations('en')">EN</button>
+        <button onclick="applyTranslations('ru')">RU</button>
+        <button onclick="applyTranslations('cs')">CZ</button>
+        <button onclick="applyTranslations('ua')">UA</button>
+
+      </nav>
+
+      <div class="social">
+        <ul class="social-list">
+          <li class="header-nav-item">
+            <a class="social-link header-link" href="https://www.facebook.com/goITclub/" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-C7iuSI4g.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a class="social-link header-link" href="https://www.instagram.com/goitclub/" target="_blank"
+              rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-C7iuSI4g.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav-item">
+            <a class="social-link header-link" href="https://www.youtube.com/c/GoIT" target="_blank"
+              rel="noopener noreferrer" aria-label="YouTube">
+              <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                <use href="/services/assets/icons-C7iuSI4g.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- header modal -->
+    <div class="burger_modal js-menu-container" id="header__mobile" role="dialog" aria-modal="true">
+      <div class="burger_container">
+        <button type="button" class="close-btn js-close-menu" aria-label="close menu">
+          <svg class="modal-close" role="img" width="32" height="32">
+            <use class="icon--wide" href="/services/assets/icons-C7iuSI4g.svg#icon-close_bold"></use>
+          </svg>
+        </button>
+
+        <nav class="modal-nav">
+          <ul class="modal-nav-list">
+            <li class="modal-nav-item">
+              <a href="#about" class="nav-link mobile-menu-list">About us</a>
+            </li>
+            <!-- <li class="modal-nav-item">
+              <a href="#lessons" class="nav-link mobile-menu-list">Our lessons</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="#teachers" class="nav-link mobile-menu-list">Teachers</a>
+            </li>
+            <li class="modal-nav-item">
+              <a href="#reviews" class="nav-link mobile-menu-list">Reviews</a>
+            </li> -->
+            <li class="modal-nav-item">
+              <a href="#application-form" class="nav-link mobile-menu-list">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <div class="modal_social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                  <use href="/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.instagram.com/goitclub/" target="_blank"
+                rel="noopener noreferrer" aria-label="Instagram">
+                <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                  <use href="/img/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li> -->
+            <!-- <li class="social-item">
+              <a class="social-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer"
+                aria-label="YouTube">
+                <svg class="social-icon" width="26" height="26" aria-hidden="true">
+                  <use href="/img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li> -->
+          
+        </div>
+      </div>
+    </div>
+  
+</header>
+  
+  <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <main>
+    <!-- Start hero section -->
+<section id="hero" class="hero-section">
+  <div class="container hero-content">
+    <h1 class="hero-text animated">
+      Business and Personal Services in the  
+      <span class="hero-english">Czech</span> Republic!
+    </h1>
+    <a href="#application-form" class="button hero-button animated">Leave an application</a>
+    <div class="hero-checkmark">
+      <a href="#footer" class="hero-checkmark-container animated" aria-label="Footer button">
+        <svg class="hero-svg" aria-hidden="true">
+          <use class="hero-use" xlink:href="/services/assets/icons-C7iuSI4g.svg#icon-checkmark"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- End hero section -->
+    <section id="about" class="section about">
+  <div class="container">
+    <h2 class="section-title"><span>Services</span></h2>
+    <p class="section-subtitle">
+      Company formation, accounting, certified translations, bank account opening,
+       licensing, legal support, and full
+      administrative assistance — fast, reliable, and fully tailored to your needs
+    </p>
+
+    <div class="about-wrapper">
+      <ul class="about-list">
+        <li class="about-item">
+          <h3 class="topic-title">Company Formation</h3>
+          <p class="about-item-text">
+          
+          Company Formation (s.r.o.) — Complete Service Package          
+          We prepare all documents required for establishing a company,
+           guide you through every step, and handle all legal
+          procedures. Fast, transparent and error-free incorporation.</p>
+        </li>
+        <li class="about-item">
+          <h3 class="topic-title">Document Preparation</h3>
+          <p class="about-item-text">          
+          Complete Document Preparation for Company Registration          
+          We collect all necessary documentation, prepare applications,
+           ensure compliance with legal requirements, and manage
+          submissions to the official registry.</p>
+        </li>
+        <li class="about-item">
+          <h3 class="topic-title">Business Licenses and Permits</h3>
+          <p class="about-item-text">          
+          Obtaining Business Licenses and Permits          
+          We arrange trade licenses, special permits, 
+          and all documentation required for compliant business 
+          activity in the Czech Republic.
+           Fast and professional assistance.</p>
+        </li>
+        <li class="about-item">
+          <h3 class="topic-title">Representation in Government Offices</h3>
+          <p class="about-item-text">          
+          Representation in Public Institutions          
+          We handle administrative procedures at the trade office,
+           financial office, immigration authorities, social office, 
+           and other institutions. No need for you to attend in person.</p>
+        </li>      
+     
+      
+      
+        <li class="about-item">
+          <h3 class="topic-title">Certified Translations</h3>
+          <p class="about-item-text">
+            Certified and Court-Approved Translations
+            Official translations for government offices,
+            banks, courts, and notaries. All documents are
+            translated and certified by authorized sworn translators.</p>
+        </li>
+        <li class="about-item">
+          <h3 class="topic-title">Bank Account Opening</h3>
+          <p class="about-item-text">
+            Opening Personal and Corporate Bank Accounts
+            We prepare the required documents, assist during
+            the bank visit, and help you choose the most suitable banking
+            conditions. Cooperation with major Czech banks.</p>
+        </li>
+        <li class="about-item">
+          <h3 class="topic-title">Legal Support for Real Estate</h3>
+          <p class="about-item-text">
+            Legal Support for Real Estate Transactions
+            We review properties, prepare agreements, coordinate
+            negotiations, and ensure safe and legally sound property
+            acquisition. Full assistance throughout the transaction.</p>
+        </li>
+        <li class="about-item">
+          <h3 class="topic-title">Accounting Services</h3>
+          <p class="about-item-text">
+            Full Accounting Support
+            We provide bookkeeping, prepare financial
+            statements, handle VAT submissions,
+            control deadlines, and help optimize your
+            tax obligations. Reliable and confidential accounting
+            for businesses and freelancers.</p>
+        </li>
+      </ul>
+
+     
+    </div>
+  </div>
+</section>   
+    <!-- Start our Proposal section -->
+<section id="proposal" class="section proposal-section">
+  <div class="container">
+    <div class="proposal-container">
+      <h2 class="visually-hidden">Proposal to leave an application</h2>
+      <p class="title">
+        Extended <span class="title-language">Service</span> Package
+      </p>
+      <div class="proposal-inner">
+        <div class="proposal-wrapper">
+          <!-- <p class="proposal-text">Power of English</p> -->
+          <ul class="proposal-list">
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-C7iuSI4g.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Document Apostille
+                Apostille of personal and corporate documents for
+                 official use in the Czech Republic and abroad.
+              </p>
+            </li>
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-C7iuSI4g.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Datová schránka Setup
+                Application preparation and full assistance in
+                 opening a datová schránka, including client presence.
+              </p>
+            </li>
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-C7iuSI4g.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Bank Account Opening
+                Support with opening personal and corporate bank accounts
+                 in Czech banks, with required client presence.
+              </p>
+            </li>
+            <li class="proposal-item">
+              <div class="icon-wrapper">
+                <svg class="check-icon" width="14" height="14">
+                  <use href="/services/assets/icons-C7iuSI4g.svg#icon-check"></use>
+                </svg>
+              </div>
+              <p class="proposal-item-text">
+                Service Power of Attorney
+                Preparation of a power of attorney for full service support,
+                notarized at the client’s consulate if required.
+              </p>
+            </li>
+          </ul>
+          <a href="#application-form" class="button proposal-button">Leave an application</a>
+          <div class="books-image-wrapper">
+            <picture>
+              <source srcset="/services/assets/books@1x-CWyTwSlt.avif 1x, /services/assets/books@2x-DOiGQ0rF.avif 2x" type="image/avif" >
+              <source srcset="/services/assets/books@1x-C5x3lTuK.png 1x, /services/assets/books@2x-CuxoVPSx.png 2x" >
+              <img src="/services/assets/books@1x-C5x3lTuK.png" alt="Tall stack of books" class="books-img animated" width="321"
+                height="368" >
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End our Proposal section -->    
+    <section id="application-form" class="section">
+  <div class="container">
+    <h2 class="section-title">Leave an application</h2>
+    <div class="form-img-container">
+      <p class="leave-item-text-up">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <!-- <div class="leave-form__grid">
+        <div class="image"> -->
+          <!-- <picture>
+            <source srcset="
+                /img/leave_an_app/girl@1x.avif 1x,
+                /img/leave_an_app/girl@2x.avif 2x
+              " media="(min-width: 1280px)" type="image/avif" />
+
+            <source srcset="
+                /img/leave_an_app/girl@1x.png 1x,
+                /img/leave_an_app/girl@2x.png 2x
+              " media="(min-width: 1280px)" type="image/png" />
+            <img src="/img/leave_an_app/girl@1x.png" srcset="/img/leave_an_app/girl@2x.png 2x"
+              alt="Student with headphones" />
+          </picture> -->
+          
+           <!-- <p class="image-text-1000">1000</p> -->
+          <!-- <p class="image-text">
+            Please use the form below to contact us.
+            Enter your name, email, and message and we'll 
+            get back to you shortly.
+          </p> -->
+        <!-- </div> -->
+        <form class="leave-form" action="#">
+          <div class="form-container">
+            <label class="visually-hidden" for="user-name">Name</label>
+            <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Name"
+              pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє\s]{2,}$" title="Мінімум 2 літери, тільки букви та пробіли" required >
+          </div>
+          <div class="form-container">
+            <label class="visually-hidden" for="phone">Phone</label>
+            <input class="form-input" type="tel" name="phone" id="phone" placeholder="Phone"
+              pattern="^\+38\s?\(0\d{2}\)\s?\d{3}-\d{2}-\d{2}$" title="Формат: +38 (0XX) XXX-XX-XX" required >
+          </div>
+          <div class="form-container">
+            <label class="visually-hidden" for="mail">Email</label>
+            <input class="form-input" type="email" name="mail" id="mail" placeholder="Email"
+              pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" title="Введіть правильний email" required >
+          </div>
+          <div class="textarea-container">
+            <label class="visually-hidden" for="user-comment">Comment</label>
+            <textarea name="user-comment" class="form-textarea" id="user-comment" rows="10"
+              placeholder="Comment"></textarea>
+          </div>
+          <!-- <p class="radio-text">Choose a teacher</p>
+          <div role="group" class="radio">
+            <label for="maria"><input type="radio" name="teacher" value="maria" id="maria" />Maria</label>
+            <label for="artem"><input type="radio" name="teacher" value="artem" id="artem" />Artem</label>
+            <label for="ilona"><input type="radio" name="teacher" value="ilona" id="ilona" />Ilona</label>
+            <label for="volodymyr"><input type="radio" name="teacher" value="volodymyr"
+                id="volodymyr" />Volodymyr</label>
+          </div> -->
+          <button type="submit" class="button lesson-button">Send</button>
+          <p class="leave-item-text-down">
+            By clicking on “Send” button, you agree to our
+            <a class="text-link leave-item-link-text-down" href="/privacy-policy" target="_blank">Privacy
+              Policy,</a><br>and allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
+  
+</section>
+    <section class="section section-reviews animated" id="reviews">
+  <div class="container">
+    <!-- <h2 class="section-title">What our <span>students</span> say</h2>
+    <p class="section-subtitle">
+      Hear from our students about their learning journey with us, as they share
+      their experiences, progress, and the transformative impact
+    </p> -->
+
+    <div class="reviews-slider" aria-roledescription="carousel">
+      <button class="nav-btn prev" aria-label="Previous review" type="button">
+        <svg class="nav-btn-icon prev-icon" width="24" height="24" aria-hidden="true">
+          <use href="/services/assets/icons-C7iuSI4g.svg#icon-checkmark"></use>
+        </svg>
+      </button>
+
+      <div class="viewport" tabindex="0" aria-live="polite">
+        <ul class="review-track">
+          <li class="review-item">
+            <div class="info-box">
+              <!-- <div class="review-img-box">
+                <img class="review-img" srcset="
+                    img/students/img-5@1x.jpg,
+                    img/students/img-5@2x.jpg 2x
+                  " src="img/students/img-5@1x.jpg" alt="QUESTIONS & CONSULTATIONS" width="50" height="50" />
+              </div> -->
+              <div class="review-info">
+                <h3 class="info-title">QUESTIONS</h3>
+                <!-- <h4 class="info-subtitle">Student</h4> -->
+              </div>
+            </div>
+            <p class="review-text">
+              Feel free to ask any questions — we are ready to clarify 
+              all details, discuss the cooperation process, and provide
+              clear, comprehensive information.
+
+            </p>
+          </li>
+
+          <li class="review-item">
+            <div class="info-box">
+              <!-- <div class="review-img-box">
+                <img class="review-img" srcset="
+                    img/students/img-6@1x.jpg,
+                    img/students/img-6@2x.jpg 2x
+                  " src="img/students/img-6@1x.jpg" alt="SERVICE AGREEMENT" width="50" height="50" />
+              </div> -->
+              <div class="review-info">
+                <h3 class="info-title">SERVICE AGREEMENT</h3>
+                <!-- <h4 class="info-subtitle">Student</h4> -->
+              </div>
+            </div>
+            <p class="review-text">
+              We prepare a personalized agreement for each client.
+               Pricing is calculated individually and depends on the scope,
+              complexity, and specific requirements of your business.
+            </p>
+          </li>
+
+          <li class="review-item">
+            <div class="info-box">
+              <!-- <div class="review-img-box">
+                <img class="review-img" srcset="
+                    img/students/img-7@1x.jpg,
+                    img/students/img-7@2x.jpg 2x
+                  " src="img/students/img-7@1x.jpg" alt="HOW TO CONTACT US" width="50" height="50" />
+              </div> -->
+
+              <div class="review-info">
+                <h3 class="info-title">HOW TO CONTACT US</h3>
+                <!-- <h4 class="info-subtitle">Student</h4> -->
+              </div>
+            </div>
+            <p class="review-text">
+              Call us or submit your request through the contact form.
+               Please indicate the purpose of your inquiry and key details
+              about your company so we can respond accurately.
+
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <button class="nav-btn next" aria-label="Next review" type="button">
+        <svg class="nav-btn-icon next-btn" width="24" height="24" aria-hidden="true">
+          <use href="/services/assets/icons-C7iuSI4g.svg#icon-checkmark"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-container">
+      <div class="logo-contacts-container">
+
+        <div class="footer-logo">
+          <a class="footer-logo-link" href="/mcs9-incredibles">
+            <span class="i18n company-name">Czech Corporate</span><span class="logo-span">Services</span>.
+          </a>
+        </div>
+
+        <ul class="footer-contacts">
+          <li>
+            <p class="footer-contacts-label i18n phone-label">Phone number:</p>
+            <a class="footer-phone" href="tel:+420777713093">+420 777-713-093</a>
+          </li>
+          <li>
+            <p class="footer-contacts-label i18n address-label">Address:</p>
+            <address>
+              <a class="footer-phone" href="https://maps.google.com/?q=32a+M.+Prague+Czech Republic" target="_blank"
+                rel="noopener noreferrer">
+                Prague, Czech Republic
+              </a>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-menu">
+          <li class="footer-menu-item">
+            <a class="footer-address i18n nav-about" href="#about">About us</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-address i18n nav-reviews" href="#reviews">Reviews</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-address i18n nav-contact" href="#application-form">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr class="footer-divider" >
+
+      <div class="footer-bottom">
+        <p class="footer-copyright i18n copyright">
+          Czech Corporate Services. All rights reserved.
+        </p>
+        <ul class="footer-legal">
+          <li class="footer-legal-item">
+            <a class="footer-legal-link" href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+              <span class="i18n privacy">Privacy Policy</span>
+            </a>
+          </li>
+          <li class="footer-legal-item">
+            <a class="footer-legal-link" href="/terms" target="_blank" rel="noopener noreferrer">
+              <span class="i18n terms">Terms of Service</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+  <div class="js-menu-overlay"></div>
+
+  <script src="/js/lang.js"></script>
+</body>
+
+</html>
