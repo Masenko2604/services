@@ -75,9 +75,9 @@
   height: 20px;
 }
 
-/* исправлено --- долгое тире было тройным */
+
 .hero-use {
-  fill: var(--darkgreen);
+  fill: rgba(129, 167, 109, 1);
 }
 
 .hero-checkmark {
@@ -203,6 +203,9 @@
         rgba(0, 0, 0, 0) 51.43%),
       url(/img/hero/block_desk@2x.jpg);
   }
+}
+.hero-section {
+  filter: brightness(0.78) saturate(0.82);
 }
 
   .hero-content {
